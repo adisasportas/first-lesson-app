@@ -7,8 +7,12 @@ export default function CounterFile() {
       }
   return (
     <div>
-    <h2>Counter: {counter}</h2>
+    <h2 className='text-danger'>Counter: {counter}</h2>
     <button onClick={onAdd1Click}>Add 1</button>
-    `</div>
+    <button onClick={()=>{
+        setCounter(counter-1);
+    }}
+>reduce 1 </button>
+    </div>
   )
 }
